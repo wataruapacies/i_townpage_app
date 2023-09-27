@@ -1,0 +1,81 @@
+cd 
+
+composer create-project --prefer-dist laravel/laravel phone_number_app "6.18.*"
+
+apt-get install python3
+
+apt-get install pip
+
+apt-get install -y x11vnc xvfb fluxbox wget wmctrl gnupg2
+
+apt-get install -y wget
+
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - && echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list
+
+
+apt-get update
+
+apt-get install -y wget
+
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - && echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list
+
+apt-get install -y google-chrome-stable
+
+pip install pandas==1.5.2
+pip install selenium==3.141.0
+pip install urllib3==1.26.15
+pip install chromedriver-autoinstaller==0.6.2
+
+
+
+chmod 777 -R storage/
+php artisan key:generate
+
+php artisan migrate
+
+
+Authのあれこれ～～～～
+composer require laravel/ui:^1.0 --dev
+php artisan ui vue --auth
+npm install
+npm audit fix
+npm run dev
+～～～～
+
+
+php artisan make:controller DownloadController
+
+
+
+
+composer require barryvdh/laravel-debugbar --dev
+
+pip install mysql-connector-python
+
+次は docker-compose startから開始
+
+
+
+apt install -y cron
+apt install -y nano
+
+/var/www/html/phone_number_app/storage/app/public/python/comp.sh
+
+Google Chrome 115.0.5790.170
+
+
+Auth::routes(['register' => false]);
+これで登録機能を消せる．
+
+
+
+別に一回一回ChromeDriverダウンロードせんでいいやん
+線方がエラー防げる．
+してなかった
+
+nano /etc/crontab
+55 * * * * root bash /var/www/html/phone_number_app/storage/app/public/python/comp.sh
+
+service cron status
+
+
