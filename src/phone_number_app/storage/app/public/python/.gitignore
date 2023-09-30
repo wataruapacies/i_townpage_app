@@ -1,3 +1,4 @@
 *
 !.gitignore
-!files/
+!req.py
+!comp.sh
