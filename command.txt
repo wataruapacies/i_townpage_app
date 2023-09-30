@@ -79,3 +79,11 @@ nano /etc/crontab
 service cron status
 
 
+
+
+
+
+pip install lxml==4.9.2
+pip install beautifulsoup4==4.12.2
+pip install fake-useragent==1.1.3
+pip install requests==2.30.0
