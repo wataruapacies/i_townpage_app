@@ -3,4 +3,5 @@
 !result/
 !.gitignore
 !req.py
+!reqcsv.py
 !comp.sh
